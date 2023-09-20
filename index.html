@@ -7,6 +7,9 @@
     <script src="js/bootstrap.min.js"></script>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--不請求icon，原因:在載入時自動請求title旁邊的小icon(不管你有沒有寫)-->
+    <!--錯資GET /favicon.ico HTTP/1.1" 404-->
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
     <title>Document</title>
 </head>
 <body>
@@ -45,7 +48,7 @@
         </nav>
     </header>
     <main style="min-height: 100vh;background-color: rgb(244, 249, 252);">
-        <div class="container-fluid" style="min-height: 100vh;">
+        <div class="container" style="min-height: 100vh;">
             <div class="row"  id="about_me">
                 <div class="col-md-8 col-12" >
                     <div class=" m-5 text-center">
@@ -71,23 +74,81 @@
             </div>
             <div class="row" id="side_project">
                 <h2 class="mt-4 fst-italic">專題介紹</h2>
-                <iframe  class="col-md-7 col-12" width="560" height="315" src="https://www.youtube.com/embed/jDW5OGN0GFU?si=6RAmN2aiAvghcFYP" title="YouTube video player" frameborder="0" 
+                <iframe  class="col-md-7 col-12 mb-3 " width="560" height="autoplay" src="https://www.youtube.com/embed/jDW5OGN0GFU?si=6RAmN2aiAvghcFYP" title="YouTube video player" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                 </iframe>
-                <div class="col-md-5 col-12"  style="margin-top: 60px;">
-                    <ul style="margin-left: 100px;">
-                        <li class="li_item">Malcolm Scott Carpenter</li>
-                        <li class="li_item">Leroy Gordon (Gordo) Cooper Jr.</li>
-                        <li class="li_item">John Herschel Glenn Jr.</li>
-                        <li class="li_item">Virgil Ivan (Gus) Grissom</li>
-                        <li class="li_item">Walter Marty (Wally) Schirra Jr.</li>
-                        <li class="li_item">Alan Bartlett Shepard Jr.</li>
-                        <li class="li_item">Donald Kent (Deke) Slayton</li>
+                <div class="col-md-5 col-12" >
+                    <h4 class="mb-4">功能介紹 : </h4>
+                    <ul >
+                        <li class="li_item">
+                            <p class="d-inline-flex gap-1">
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                            </p>
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                <div class="card card-body">
+                                  Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li_item">
+                            <p class="d-inline-flex gap-1">
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle first element</a>
+                            </p>
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                <div class="card card-body">
+                                  Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li_item">
+                            <p class="d-inline-flex gap-1">
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">Toggle first element</a>
+                            </p>
+                            <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                <div class="card card-body">
+                                  Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li_item">
+                            <p class="d-inline-flex gap-1">
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">Toggle first element</a>
+                            </p>
+                            <div class="collapse multi-collapse" id="multiCollapseExample4">
+                                <div class="card card-body">
+                                  Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                  </div>
             </div>
             <div class="row" id="programming_skills">
-                <h1>123</h1>
+                <h2 class="mt-4 fst-italic">技能</h2>
+                    <div class="col-md-4 col-12 d-flex position-relative mb-3">
+                        <img src="assets/head.jpg" class="flex-shrink-0 me-3" alt="...">
+                        <div>
+                        <h5 class="mt-0">Custom component with stretched link</h5>
+                        <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                        <a href="#" class="stretched-link">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex position-relative mb-3">
+                        <img src="assets/head.jpg" class="flex-shrink-0 me-3" alt="...">
+                        <div>
+                          <h5 class="mt-0">Custom component with stretched link</h5>
+                          <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                          <a href="#" class="stretched-link">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex position-relative mb-3">
+                        <img src="assets/head.jpg" class="flex-shrink-0 me-3" alt="...">
+                        <div>
+                            <h5 class="mt-0">Custom component with stretched link</h5>
+                            <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                            <a href="#" class="stretched-link">Go somewhere</a>
+                        </div>
+                    </div>
             </div>
             <div class="row" id="information">
                 <h1>123</h1>
