@@ -4,32 +4,60 @@
     font-weight:bold;
     margin-right: 10px;
 }
-#about_me{
-    background-color: #e2eef5;
-    color: #29b429;
-    min-height:60vh;
+/* title圖片 */
+.title{
+    background-image: url("../assets/head.jpg");
+    background-size: 100% 100%;
+    min-height: 95vh;
+    min-width: 95vw;
+
+}
+.title_opacity{
+    background: rgba(255,255,255,0.5);
+     min-height: 95vh;
+     min-width: 95vw;
+     position: relative;
+}
+.title_text1{
+    margin-left: 100px;
+    margin-top: 100px; 
+    position: absolute;
+}
+.title_text2{
+    margin-left: 100px;
+    margin-top: 300px; 
+    position: absolute;
+}
+.title_text3{
+    margin-left: 80vw;
+    margin-top: 75vh; 
+    position: absolute;
+}
+
+/* 關於我 */
+.about_me{  
+   background-color: #e2eef5;
 }
 .head_pic{
     min-height: 40vh;
     max-height:50vh;
     margin: 20px;
 }
-#side_project{
+/* 專題介紹 */
+.project{  
     background-color: #4c91bc;
-    color: #c8dee9;
-    min-height:45vh;
+    
 }
-#programming_skills{
-    background-color: #d0e0ea;
-    color: #6c767b;
-    min-height:30vh;
+/* 技能 */
+.programming_skills{ 
+  background-color: #d0e0ea;
+    
 }
-#information{
-    background-color: #233641;
-    color: #6c767b;
-    min-height:10vh;
+/* 聯絡資訊 */
+.information{
+   background-color: #233641;
 }
-
+/* ------ */
 .card-text{
     font-size:18px;
     font-family: monospace;
