@@ -1,7 +1,27 @@
 .navbar-collapse .navbar-nav .nav-item .nav-link{
     color: #364f5f;
-    font-size:18px;
+    font-size:15px;
     font-family:Microsoft JhengHei;
     font-weight:bold;
     margin-right: 10px;
+}
+#about_me{
+    background-color: #e2eef5;
+    color: #6c767b;
+    height: 500px;
+}
+#side_project{
+    background-color: #4c91bc;
+    color: #6c767b;
+    height: 800px;
+}
+#programming_skills{
+    background-color: #d0e0ea;
+    color: #6c767b;
+    height: 250px;
+}
+#information{
+    background-color: #233641;
+    color: #6c767b;
+    height: 50px;
 }
