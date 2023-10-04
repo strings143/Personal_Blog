@@ -77,6 +77,10 @@
 
 
 /* ------ */
+.card{
+    background-color: rgba(255, 255, 255, 0.808)!important;
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.6));
+}
 .card-text {
     font-size: 18px;
     font-weight: bold;
