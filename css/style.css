@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+
+/* header */
 .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: #364f5f;
     font-size: 15px;
@@ -11,47 +14,36 @@
 .title {
     background-image: url("../assets/cover.jpg");
     background-size: cover;
-    min-height: 95vh;
-    min-width: 95vw;
 }
 
 .title_opacity {
     background: rgba(17, 17, 17, 0.5);
     min-height: 95vh;
-    min-width: 95vw;
-    position: relative;
 }
 
 .title_text1 {
     color: #fff;
-    margin-left: 100px;
-    margin-top: 100px;
-    position: absolute;
+    padding-top: 35vh; 
+    padding-left: 100px;
+    font-family: "cwTeXFangSong",cursive;
 }
 
-.title_text2 {
-    color: #fff;
-    margin-left: 100px;
-    margin-top: 300px;
-    position: absolute;
-}
 
-.title_text3 {
-    margin-left: 80vw;
-    margin-top: 75vh;
-    position: absolute;
-}
+.title_btn {
+    padding-top: 100px; 
+    padding-left: 100px;
+} 
 
 
 /* 關於我 */
 
 .about_me {
     background-color: #e2eef5;
+    font-family: cursive;
+    font-weight: bold;
 }
 
 .head_pic {
-    min-height: 40vh;
-    max-height: 50vh;
     margin: 20px;
 }
 
@@ -59,7 +51,9 @@
 /* 專題介紹 */
 
 .project {
-    background-color: #4c91bc;
+    background-color: #598aa8;
+    font-family: cursive;
+    font-weight: bold;
 }
 
 
@@ -67,20 +61,25 @@
 
 .programming_skills {
     background-color: #d0e0ea;
+    font-family: cursive;
+    font-weight: bold;
 }
-
+.img-fluid{
+    height: 260px!important;
+}
 
 /* 聯絡資訊 */
 
 .information {
     background-color: #233641;
+    color: azure;
 }
 
 
 /* ------ */
-
 .card-text {
     font-size: 18px;
+    font-weight: bold;
     font-family: monospace;
 }
 
