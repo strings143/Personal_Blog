@@ -1,70 +1,94 @@
-.navbar-collapse .navbar-nav .nav-item .nav-link{
+.navbar-collapse .navbar-nav .nav-item .nav-link {
     color: #364f5f;
-    font-size:15px;
-    font-weight:bold;
+    font-size: 15px;
+    font-weight: bold;
     margin-right: 10px;
 }
+
+
 /* title圖片 */
-.title{
-    background-image: url("../assets/head.jpg");
-    background-size: 100% 100%;
+
+.title {
+    background-image: url("../assets/cover.jpg");
+    background-size: cover;
     min-height: 95vh;
     min-width: 95vw;
 }
-.title_opacity{
-    background: rgba(255,255,255,0.5);
-     min-height: 95vh;
-     min-width: 95vw;
-     position: relative;
+
+.title_opacity {
+    background: rgba(17, 17, 17, 0.5);
+    min-height: 95vh;
+    min-width: 95vw;
+    position: relative;
 }
-.title_text1{
+
+.title_text1 {
+    color: #fff;
     margin-left: 100px;
-    margin-top: 100px; 
-    position: absolute;
-}
-.title_text2{
-    margin-left: 100px;
-    margin-top: 300px; 
-    position: absolute;
-}
-.title_text3{
-    margin-left: 80vw;
-    margin-top: 75vh; 
+    margin-top: 100px;
     position: absolute;
 }
 
-/* 關於我 */
-.about_me{  
-   background-color: #e2eef5;
+.title_text2 {
+    color: #fff;
+    margin-left: 100px;
+    margin-top: 300px;
+    position: absolute;
 }
-.head_pic{
+
+.title_text3 {
+    margin-left: 80vw;
+    margin-top: 75vh;
+    position: absolute;
+}
+
+
+/* 關於我 */
+
+.about_me {
+    background-color: #e2eef5;
+}
+
+.head_pic {
     min-height: 40vh;
-    max-height:50vh;
+    max-height: 50vh;
     margin: 20px;
 }
+
+
 /* 專題介紹 */
-.project{  
+
+.project {
     background-color: #4c91bc;
-    
 }
+
+
 /* 技能 */
-.programming_skills{ 
-  background-color: #d0e0ea;
-    
+
+.programming_skills {
+    background-color: #d0e0ea;
 }
+
+
 /* 聯絡資訊 */
-.information{
-   background-color: #233641;
+
+.information {
+    background-color: #233641;
 }
+
+
 /* ------ */
-.card-text{
-    font-size:18px;
+
+.card-text {
+    font-size: 18px;
     font-family: monospace;
 }
-.li_item{
+
+.li_item {
     margin-left: 100px;
     margin-top: 10px;
 }
+
 .li_item::marker {
     content: '🧙‍♂️  ';
     font-size: 1.3em;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!--不請求icon，原因:在載入時自動請求title旁邊的小icon(不管你有沒有寫)-->
     <!--錯資GET /favicon.ico HTTP/1.1" 404-->
-    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
-    <title>Document</title>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <title>我的個人履歷</title>
 </head>
+
 <body>
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-md" style="background-color: #c6dae9;"> 
+        <nav class="navbar navbar-expand-md" style="background-color: #c6dae9;">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,25 +24,35 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                          <a class="nav-link"  href="#about_me">關於我 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-person-vcard-fill" viewBox="0 0 18 18">
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5ZM9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8Zm1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5Zm-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96c.026-.163.04-.33.04-.5ZM7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z"/>
-                          </svg></a>
+                            <a class="nav-link" href="#about_me">關於我 <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                    height="18" fill="currentColor" class="bi bi-person-vcard-fill" viewBox="0 0 18 18">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5ZM9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8Zm1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5Zm-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96c.026-.163.04-.33.04-.5ZM7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z" />
+                                </svg></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#project ">專題介紹 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-motherboard-fill" viewBox="0 0 18 18">
-                            <path d="M5 7h3V4H5v3Z"/>
-                            <path d="M1 2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-2H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 9H1V8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6H1V5H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 2H1Zm11 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7Zm2 0a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM3.5 10a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6Zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6ZM4 4h-.5a.5.5 0 0 0 0 1H4v1h-.5a.5.5 0 0 0 0 1H4a1 1 0 0 0 1 1v.5a.5.5 0 0 0 1 0V8h1v.5a.5.5 0 0 0 1 0V8a1 1 0 0 0 1-1h.5a.5.5 0 0 0 0-1H9V5h.5a.5.5 0 0 0 0-1H9a1 1 0 0 0-1-1v-.5a.5.5 0 0 0-1 0V3H6v-.5a.5.5 0 0 0-1 0V3a1 1 0 0 0-1 1Zm7 7.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5Z"/>
-                          </svg></a>
+                            <a class="nav-link" href="#project ">專題介紹 <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                    height="18" fill="currentColor" class="bi bi-motherboard-fill" viewBox="0 0 18 18">
+                                    <path d="M5 7h3V4H5v3Z" />
+                                    <path
+                                        d="M1 2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-2H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 9H1V8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6H1V5H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 2H1Zm11 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7Zm2 0a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM3.5 10a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6Zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6ZM4 4h-.5a.5.5 0 0 0 0 1H4v1h-.5a.5.5 0 0 0 0 1H4a1 1 0 0 0 1 1v.5a.5.5 0 0 0 1 0V8h1v.5a.5.5 0 0 0 1 0V8a1 1 0 0 0 1-1h.5a.5.5 0 0 0 0-1H9V5h.5a.5.5 0 0 0 0-1H9a1 1 0 0 0-1-1v-.5a.5.5 0 0 0-1 0V3H6v-.5a.5.5 0 0 0-1 0V3a1 1 0 0 0-1 1Zm7 7.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5Z" />
+                                </svg></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#programming_skills">技能 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
-                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z"/>
-                              </svg></a>
+                            <a class="nav-link" href="#programming_skills">技能 <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-file-earmark-code-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+                                </svg></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#information">聯絡方式 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                              </svg></a>
+                            <a class="nav-link" href="#information">聯絡方式 <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" class="bi bi-telephone-fill"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg></a>
                         </li>
                     </ul>
                 </div>
@@ -51,92 +63,104 @@
         <section class="title">
             <div class="title_opacity">
                 <div class="title_text1">
-                    <h1>Do the right things</h1>
-                    <h1>Do the right things</h1>
+                    <h1>您好，我是陳楷智</h1>
+                    <h4>目前正就讀於大葉大學資工碩班</h4>
+                    <h3>非常熱愛撰寫程式、對新知識感到好奇</h3>
+                    <h2>如果您願意給我一個展現的機會，歡迎聯絡我!</h2>
                 </div>
                 <div class="title_text2">
-                    <h1>Do the right things</h1>
-                    <h1>Do the right things</h1>
                 </div>
                 <div class="title_text3">
-                    <a class="btn btn-primary" href="#about_me" role="button">SCROLL DOWN</a>
+                    <a class="btn btn-success" href="#about_me" role="button">更深入了解我🙇‍♂️ </a>
                 </div>
             </div>
         </section>
-        <section class="about_me " >
+        <section class="about_me">
             <div class="container">
-                <div class="row"  id="about_me">
-                    <div class="col-md-8 col-12" >
-                        <div class=" mt-5 text-center">
-                            <h2 class="fw-bold fst-italic">關於我</h2>
-                            <h4 class="mt-5 fw-bold" style="word-wrap:break-word;">
-                                    您好！我是王小華，畢業於東吳大學英文系，很高興有這個機會面試 XX 公司的資深業務。（自我介紹開頭）從 2012 年畢業後，
-                                    我就一直在 OO 國際貿易公司擔任業務。在將近 3 年的時間裡，我成長為資深業務，並開發了 15 位大客戶，年平均銷售額從 50 萬元成長至 
-                                    300 萬元。我認為我的溝通能力、抗壓性與專案管理經驗，都是我能夠勝任這份資深業務職缺的優勢。（自我介紹中段）
-                                    我非常欣賞貴公司的企業文化，而且業務的職位更是我的職涯熱情所在，希望有機會進入公司，謝謝！（自我介紹結尾）
+                <div class="row" id="about_me">
+                    <div class="col-md-8 col-12">
+                        <div class=" mt-5 text-left">
+                            <h2 class="fw-bold fst-italic">簡介</h2>
+                            <h4 class="mt-4 fw-bold" style="word-wrap:break-word;">
+                                <p>目前就讀於資訊工程學系碩士生。研究方向是機器學習的Ensemble Learning健康檢測相關，目前正在積極尋找研發替代役相關工作。</p>
+                                <p>我是一個喜歡挑戰自我的人，樂於學習與探索新的事物，對於不同領域的知識感到興奮，勇於學習不同技能，接受各種可能性。</p>
+                                <p>具備探索知識的精神，時，閒暇之餘偶爾會讀技術論文精進自己的技術觀念，近期開始嘗試與學長同儕參加COSCUP開源人年度研討會。</p>
+                                <p>善於團隊合作，在團隊中時常扮演溝通的橋梁，善於站在別人的立場感受彼此的難處，調和出問題的解答，為團隊提升效率。</p>
+                                <p>非常重視專案的事前規劃，深知良好規劃的能夠為整個專案帶來良好的工作氛圍與成果。</p>
                             </h4>
                         </div>
                     </div>
                     <div class="card col-md-4 col-12 text-center">
-                        <img src="assets/head.jpg" class="head_pic card-img-top rounded mx-auto d-block">
+                        <img src="assets/profile.jpg" class="head_pic card-img-top rounded mx-auto d-block">
                         <div class="card-body">
                             <p class="card-text">
-                            名字 : 陳楷智 Tony Chen
-                            <br/>
-                            學歷 : 大葉大學 
+                                名字 : 陳楷智 Tony Chen
+                                <br /> 學歷 : 大葉大學
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="project" >
+        <section class="project">
             <div class="container">
                 <div class="row" id="project">
                     <h2 class="mt-4 fst-italic">專題介紹</h2>
-                    <iframe  class="col-md-7 col-12 mb-3 " width="560" height="autoplay" src="https://www.youtube.com/embed/jDW5OGN0GFU?si=6RAmN2aiAvghcFYP" title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    <iframe class="col-md-7 col-12 mb-3 " width="560" height="autoplay" src="https://www.youtube.com/embed/hG6_vi-Qeao?si=6RAmN2aiAvghcFYP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
                     </iframe>
-                    <div class="col-md-5 col-12" >
+                    <div class="col-md-5 col-12">
                         <h4 class="mb-4">功能介紹 : </h4>
-                        <ul >
+                        <ul>
                             <li class="li_item">
                                 <p class="d-inline-flex gap-1">
-                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">線上編譯</a>
                                 </p>
                                 <div class="collapse multi-collapse" id="multiCollapseExample1">
                                     <div class="card card-body">
-                                    Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                        本系統有提供線上編譯，讓學生上傳後能後就能及時自行編譯將結果回傳至資料庫，學生就能自行查看成績了。以往學生上傳程式後，教授得花時間將每個人的檔案放置編譯器上輸入輸出，輸出結果與否只能手動回傳，再將其成績對至學號輸入，整體過程繁雜。這改善了學生端能夠及時Debug查看結果，老師端更是方便，發放題庫後就甚麼都不用做了。
                                     </div>
                                 </div>
                             </li>
                             <li class="li_item">
                                 <p class="d-inline-flex gap-1">
-                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle first element</a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">題庫管理</a>
                                 </p>
                                 <div class="collapse multi-collapse" id="multiCollapseExample2">
                                     <div class="card card-body">
-                                    Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                        系統設計上是以課程為主去發放班級，意思是老師只要設計好課程將題庫都佈署完成後，課程設定與題庫都會綁定著課程，強調與班級是分離的。如此一來每當需要新增、刪除班級都不會影響到課程設定，且不用每次開課都需要從新設定一次題庫。
                                     </div>
                                 </div>
                             </li>
                             <li class="li_item">
                                 <p class="d-inline-flex gap-1">
-                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">Toggle first element</a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">考試系統</a>
                                 </p>
                                 <div class="collapse multi-collapse" id="multiCollapseExample3">
                                     <div class="card card-body">
-                                    Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                        <p>老師在設定完題庫後，可以藉由選擇章節題庫發放考卷，而在這之中除了每次都會打亂題目順序外，老師也可以勾選考試限制，分別為以下四種:</p>
+                                        <p>
+                                            <b style="color: red;">1.瀏覽器鎖:</b> 只能使用指定的C#的Webview才能進入考試頁面，而這個C#背後同時也會禁止任何瀏覽器開啟，並且也禁用工作管理員，以達到防止考試作弊的目的。
+                                        </p>
+                                        <p>
+                                            <b style="color: red;">2.保留答案:</b>考慮到作答期間可能發生意外導致作答紀錄不見，因此可以透過這個選項記住以往的作答，這樣要是網站意外關閉時，再重新打開一次時之前的作答紀錄會保留著。
+                                        </p>
+                                        <p>
+                                            <b style="color: red;">3.重複作答:</b>顧名思義也就是讓學生交卷後可以重複作答，如此一來考卷系統也能搖身一變當作課堂練習使用，讓這套系統更加彈性化。
+                                        </p>
+                                        <p>
+                                            <b style="color: red;">4.限制IP:</b>考試通常是在電腦教室，而電腦教室IP通常是配置在同一個網段，如此一來可以透過限制IP網段阻擋教室外想幫忙作弊的人，或是防止提早交卷在教室外修改作答的人。
+                                        </p>
                                     </div>
                                 </div>
                             </li>
                             <li class="li_item">
                                 <p class="d-inline-flex gap-1">
-                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">Toggle first element</a>
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">優化元件</a>
                                 </p>
                                 <div class="collapse multi-collapse" id="multiCollapseExample4">
                                     <div class="card card-body">
-                                    Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                        為了增加使用者體驗，使用了其他開源元件增加使用者體驗像是TinyMCE使題目編輯器更有加強大方便、並且赴有美感，SweetAlert2讓消息對話框不再看起來那麼單調，搭配著ajax使用可以說是如虎添翼。
                                     </div>
                                 </div>
                             </li>
@@ -145,38 +169,44 @@
                 </div>
             </div>
         </section>
-        <section class="programming_skills" >
+        <section class="programming_skills">
             <div class="container">
                 <div class="row" id="programming_skills">
                     <h2 class="mt-4 fst-italic">技能</h2>
-                        <div class="col-md-4 col-12 d-flex position-relative mb-3">
-                            <img src="assets/head.jpg" class="flex-shrink-0 me-3" alt="...">
-                            <div>
-                            <h5 class="mt-0">Custom component with stretched link</h5>
-                            <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                            <a href="#" class="stretched-link">Go somewhere</a>
-                            </div>
+                    <div class="col-md-4 col-12 d-flex position-relative mb-3">
+                        <img src="assets/image1.png" class="flex-shrink-0 me-3" alt="..." style="max-width: 200px;max-height: 200px;">
+                        <div>
+                            <h5 class="mt-0"><b>球控貪吃蛇</b></h5>
+                            <p style="text-align:justify">將Python的PYgame套件與OpenCV套件結合，製作了一款小遊戲，移動手中的綠色球體來為貪吃蛇指引方向。</p>
+                            <a href="#" class="stretched-link">查看更多
+                               <img src="assets/arrow-right.svg" >
+                            </a>
                         </div>
-                        <div class="col-md-4 col-12 d-flex position-relative mb-3">
-                            <img src="assets/head.jpg" class="flex-shrink-0 me-3" alt="...">
-                            <div>
-                            <h5 class="mt-0">Custom component with stretched link</h5>
-                            <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                            <a href="#" class="stretched-link">Go somewhere</a>
-                            </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex position-relative mb-3">
+                        <img src="assets/image2.png" class="flex-shrink-0 me-3" alt="..." style="max-width: 200px;max-height: 200px;">
+                        <div>
+                            <h5 class="mt-0"><b>ROV水下載具</b></h5>
+                            <p style="text-align:justify">使用PyQt設計前端畫面，將ROV水下載具控制板上的資料圖形化呈現於人機介面上，3D模型也會隨著現實載具轉動。</p>
+                            <a href="#" class="stretched-link">查看更多
+                                <img src="assets/arrow-right.svg" >
+                            </a>
                         </div>
-                        <div class="col-md-4 col-12 d-flex position-relative mb-3">
-                            <img src="assets/head.jpg" class="flex-shrink-0 me-3" alt="...">
-                            <div>
-                                <h5 class="mt-0">Custom component with stretched link</h5>
-                                <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
-                                <a href="#" class="stretched-link">Go somewhere</a>
-                            </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex position-relative mb-3">
+                        <img src="assets/image3.png" class="flex-shrink-0 me-3" alt="..." style="max-width: 200px;max-height: 200px;">
+                        <div>
+                            <h5 class="mt-0"><b>程式練習系統</b></h5>
+                            <p style="text-align:justify">在補充自己的知識盲區時，發現專題仍有進步空間，因此特意從新設計練習系統，將專題實作應用於碩班期間任職的"程式設計"助教上。</p>
+                            <a href="#" class="stretched-link">查看更多
+                                <img src="assets/arrow-right.svg" >
+                            </a>
                         </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="information" >
+        <section class="information">
             <div class="container">
                 <div class="row" id="information">
                     <h1 class="col-md-4 col-12" style="color: azure;">github</h1>
@@ -187,4 +217,5 @@
         </section>
     </main>
 </body>
+
 </html>
