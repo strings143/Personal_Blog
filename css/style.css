@@ -1,0 +1,143 @@
+
+/* ---font Rule--- */
+@font-face {
+    font-family: "JasonHandWritingFonts";
+    src: url("../assets/fonts/JasonHandwriting2-Medium.woff");
+  }
+
+/* ---Navbar---*/
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: #695c6e;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+    /* text underline; */
+    background-image: linear-gradient(#a295a7, #a295a7);
+    background-size: 0% 0.1em;
+    background-position-y: 85%;
+    background-position-x: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out;
+}
+.navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #a295a7;
+    /* text underline; */
+    background-size: 100% 0.1em;
+    background-position-x: 0%;
+}
+.navbar {
+    background-color: #c2b8ca;
+}
+
+/* ---Head---*/
+.head {
+    background-color: rgb(229, 222, 235);
+    /* min-height: 100vh; */
+}
+.head_head{
+    position: relative;
+}
+.head_img{
+    border:  5px solid #666;
+    border-radius: 50%  50%  50%  50% ;
+    width: 100%;
+    max-width: 650px;
+    height: 650px;
+}
+.head_pic{
+    width: 65%;
+    max-width: 300px;
+    position:absolute;
+    right:0px;
+    bottom:-15px;
+}
+.head_text {
+    color: #27172b;
+    padding: 20px;
+    font-family:JasonHandWritingFonts;
+}
+.head_btn {
+    padding-top: 20px; 
+} 
+.head_btn .btn{
+    background-color:#fff178f1 ;
+    font-family:'Franklin Gothic Medium', Arial;
+    font-size: 20px;
+}
+.head_btn .btn:hover{
+    background-color: #5d4966c7;
+    color: #fff178f1;
+}
+.head_btn .btn:active{
+    background-color: #5d4966c7!important;
+    color: #fff178f1!important;
+    transition: .3s;
+}
+
+/* ---About Me---  */
+.aboutMe {
+    background-color: #ffffff;
+    font-family:JasonHandWritingFonts;
+    white-space: normal; 
+    word-break:break-all;
+}
+.titlehead {
+    letter-spacing:0.4em;
+    font-family:'Franklin Gothic Medium', Arial;
+}
+.head_pic {
+    margin: 20px;
+}
+
+
+/* ---Resume--- */
+.resume {
+    background-color: #fcf7fd;
+}
+/* > ，影響底下第一層子元素。"空格"影響底下所有元素 */
+.resumeEducation{
+    font-size: 23px;
+}
+.resumeEducation > li{
+    display: flex;
+    margin: 0 0 10px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.resumeEducation li{
+    list-style-type:none;
+    display:block;
+    white-space: normal;
+    word-break:break-all;
+}
+.resumeEducation ul{
+    border-left: 8px solid;
+    border-image: linear-gradient(to bottom, #bb87f7,#955dda,#3f76e4, #6497fddc)1;
+    margin: 0 0 0 15px;
+    padding: 0 0 0 15px;
+}
+
+
+/* ---Project--- */
+.project {
+    background-color: #fcf7fd;
+    font-weight: bold;
+}
+.projectImg {
+    height: 450px;
+    opacity: 0.75;
+}
+
+/* ---Contact--- */
+
+.contact {
+    background-color: #ffffff;
+    color: rgb(12, 12, 12);
+}
+
+
+/* ------ */
+hr.line{
+    border-top: 3.5px solid rgb(155, 146, 160);
+}
+
