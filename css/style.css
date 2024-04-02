@@ -123,13 +123,32 @@
     background-color: #fcf7fd;
     font-weight: bold;
 }
-.projectImg {
-    height: 450px;
-    opacity: 0.75;
+.project img{
+    opacity:0.8;
+    filter:alpha(opacity=80);
+}
+.project img:hover{
+    opacity:0.4;
+    filter:alpha(opacity=40);
+}
+.project .card{
+    /*set center*/
+    position: relative;
+    display: block;
+}
+.project_btn{
+    background-color:#fff178f1 ;
+    font-family:'Franklin Gothic Medium', Arial;
+    font-size: 20px;
+    visibility: hidden;
+    /*set center*/
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* ---Contact--- */
-
 .contact {
     background-color: #ffffff;
     color: rgb(12, 12, 12);
