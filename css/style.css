@@ -48,7 +48,7 @@
     width: 65%;
     max-width: 300px;
     position:absolute;
-    right:0px;
+    left:0px;
     bottom:-15px;
 }
 .head_text {
@@ -132,6 +132,8 @@
     /*set center*/
     position: relative;
     display: block;
+    background-color: transparent;
+    border-color: transparent;
 }
 .project_btn{
     background-color: rgba(134, 134, 134, 0.507);
