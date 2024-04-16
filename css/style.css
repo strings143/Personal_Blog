@@ -4,6 +4,14 @@
     font-family: "JasonHandWritingFonts";
     src: url("../assets/fonts/JasonHandwriting2-Medium.woff");
   }
+mark{
+    background-color: transparent!important;
+    background-image: linear-gradient(transparent 40%,#b3d3f7, #c19ae0);
+}
+.titlehead {
+    letter-spacing:0.4em;
+    font-family:'Franklin Gothic Medium', Arial;
+}
 
 /* ---Navbar---*/
 .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -31,25 +39,34 @@
 
 /* ---Head---*/
 .head {
-    background-color: rgb(229, 222, 235);
+    /* background-color: rgba(229, 222, 235, 0.788); */
     /* min-height: 100vh; */
+    background-image: url('../assets/images/back.jpg');
+    background-size: cover;
+}
+.head_back{
+    background-color: rgba(211, 194, 224, 0.38);
 }
 .head_head{
     position: relative;
 }
 .head_img{
-    border:  5px solid #666;
+    /* border:  5px solid #666; */
     border-radius: 50%  50%  50%  50% ;
     width: 100%;
+    height: 100%;
     max-width: 650px;
-    height: 650px;
+    max-height: 650px;
 }
 .head_pic{
-    width: 65%;
+    width: 40%;
+    height: 30%;
     max-width: 300px;
+    max-height: 220px;
     position:absolute;
     left:0px;
     bottom:-15px;
+    margin: 20px;
 }
 .head_text {
     color: #27172b;
@@ -81,36 +98,29 @@
     white-space: normal; 
     word-break:break-all;
 }
-.titlehead {
-    letter-spacing:0.4em;
-    font-family:'Franklin Gothic Medium', Arial;
-}
-.head_pic {
-    margin: 20px;
-}
 
 
-/* ---Resume--- */
-.resume {
+/* ---experience--- */
+.experience {
     background-color: #fcf7fd;
 }
 /* > ，影響底下第一層子元素。"空格"影響底下所有元素 */
-.resumeEducation{
+.experienceEducation{
     font-size: 23px;
 }
-.resumeEducation > li{
+.experienceEducation > li{
     display: flex;
     margin: 0 0 10px;
     font-weight: bold;
     margin-top: 30px;
 }
-.resumeEducation li{
+.experienceEducation li{
     list-style-type:none;
     display:block;
     white-space: normal;
     word-break:break-all;
 }
-.resumeEducation ul{
+.experienceEducation ul{
     border-left: 8px solid;
     border-image: linear-gradient(to bottom, #bb87f7,#955dda,#3f76e4, #6497fddc)1;
     margin: 0 0 0 15px;
@@ -138,8 +148,9 @@
 .project_btn{
     background-color: rgba(134, 134, 134, 0.507);
     visibility: hidden;
-    height: 100%;
+    height: 95%;
     width: 100%;
+    margin-top: 10px;
     /*set center*/
     position:absolute;
     top: 50%;
