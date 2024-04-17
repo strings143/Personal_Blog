@@ -43,6 +43,7 @@ mark{
     /* min-height: 100vh; */
     background-image: url('../assets/images/back.jpg');
     background-size: cover;
+    background-attachment: fixed;
 }
 .head_back{
     background-color: rgba(211, 194, 224, 0.38);
