@@ -147,8 +147,15 @@ mark{
     border-color: transparent;
 }
 .project_btn{
-    background-color: rgba(134, 134, 134, 0.507);
     visibility: hidden;
+}
+.project_btn a{
+    background-color: rgba(134, 134, 134, 0.507);
+    color: #fff8bb;
+    font-family:JasonHandWritingFonts;
+    text-decoration: none;
+    white-space: normal;
+    word-break:break-all;
     height: 95%;
     width: 100%;
     margin-top: 10px;
@@ -158,15 +165,10 @@ mark{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.project_btn a{
-    color: #fff8bb;
-    font-family:'Franklin Gothic Medium', Arial;
-    text-decoration: none;
+.project_text{
     position:absolute;
     bottom:0;
     left:0;
-    white-space: normal;
-    word-break:break-all;
 }
 @media (max-width: 300px) {
     .project_btn a h3{
@@ -184,7 +186,7 @@ mark{
     .project_btn a h3{
         visibility: hidden;
     }
-    .project_btn a h4{
+    .project_btn a h5{
         visibility: hidden;
     }
     .project_btn a h6{
